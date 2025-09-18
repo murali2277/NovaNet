@@ -1,0 +1,108 @@
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 2rem 2rem 2rem;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.contact-hello {
+  flex: 1;
+  text-align: center;
+}
+
+.handwriting {
+  font-family: 'Arizonia', cursive;
+  font-size: 10rem;
+  font-weight: 400;
+  transform: rotate(-15deg);
+}
+
+.handwriting span {
+  opacity: 0;
+  animation: fadeInLetter 0.5s forwards;
+}
+
+.handwriting span:nth-child(1) { animation-delay: 0.2s; }
+.handwriting span:nth-child(2) { animation-delay: 0.4s; }
+.handwriting span:nth-child(3) { animation-delay: 0.6s; }
+.handwriting span:nth-child(4) { animation-delay: 0.8s; }
+.handwriting span:nth-child(5) { animation-delay: 1.0s; }
+.handwriting span:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes fadeInLetter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-info-container {
+  flex: 1;
+}
+
+.contact-info-container h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #2C3E50;
+}
+
+.contact-info-item a,
+.contact-info-item span {
+  color: #34495e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-item a:hover {
+  color: #5a6a7a;
+}
+
+.social-media {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-media a {
+  color: #2C3E50;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #5a6a7a;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-hello {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+  }
+}
