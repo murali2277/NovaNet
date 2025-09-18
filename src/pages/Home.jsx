@@ -30,8 +30,8 @@ const Home = () => {
               <p>Quick and efficient installation process across your LAN network</p>
             </div>
             <div className="feature-card">
-              <h3>Secure Transfer</h3>
-              <p>Encrypted file transfer ensures your data remains protected</p>
+              <h3>Automated Deployment</h3>
+              <p>Files are automatically pushed from the server to all connected clients.</p>
             </div>
             <div className="feature-card">
               <h3>Easy Configuration</h3>
