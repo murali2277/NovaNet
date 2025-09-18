@@ -286,25 +286,29 @@ section {
 /* Download Section */
 .download-section {
   background-color: #F8F5F0; /* Light beige background */
+  padding-top: 5cm;
 }
 
 .download-section .container {
   max-width: 1200px;
   width: 90%;
-  
+}
+
+.download-section .section-title {
+  text-align: left;
+  margin-bottom: 1rem; /* Reduced margin */
 }
 
 .download-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 3rem;
 }
 
 .download-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: left;
+  flex-basis: 50%;
 }
 
 .download-description {
@@ -316,8 +320,8 @@ section {
 
 .download-options {
   display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
+  justify-content: flex-end;
+  flex-basis: 50%;
 }
 
 .download-card {
