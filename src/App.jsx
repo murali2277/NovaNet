@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 function App() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
@@ -29,21 +30,26 @@ function App() {
             <div className="nav-logo">
               <Link to="/"><h2>NovaNet</h2></Link>
             </div>
-            <ul className="nav-menu">
+            <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+              <div />
+              <div />
+              <div />
+            </div>
+            <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
               <li className="nav-item">
-                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
               </li>
               <li className="nav-item">
-                <HashLink smooth to="/#features" className="nav-link">Features</HashLink>
+                <HashLink smooth to="/#features" className="nav-link" onClick={() => setMenuOpen(false)}>Features</HashLink>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">About</Link>
+                <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link">Contact</Link>
+                <Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link>
               </li>
               <li className="nav-item">
-                <HashLink smooth to="/#download" className="nav-link">Download</HashLink>
+                <HashLink smooth to="/#download" className="nav-link" onClick={() => setMenuOpen(false)}>Download</HashLink>
               </li>
             </ul>
           </div>

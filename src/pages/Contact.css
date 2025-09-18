@@ -101,8 +101,17 @@
     text-align: center;
   }
 
-  .contact-hello {
+  .handwriting {
     font-size: 6rem;
+  }
+
+  .contact-hello {
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .handwriting {
+    font-size: 4rem;
   }
 }
