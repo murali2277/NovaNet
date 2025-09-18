@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaGlobe } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -21,9 +21,9 @@ const Contact = () => {
           <span>+1 (555) 123-4567</span>
         </div>
         <div className="social-media">
-          <a href="https://github.com/Sanjay-29-Kumar/LAN_Auto_Install" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/murali-kumar-s-12994b291/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://buildwithmk.app" target="_blank" rel="noopener noreferrer"><FaGlobe /></a>
         </div>
       </div>
     </div>
